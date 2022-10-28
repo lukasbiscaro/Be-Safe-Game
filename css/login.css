@@ -1,6 +1,9 @@
 :root {
     --primary-color: rgb(51, 51, 51);
     --secondary-color: rgb(26, 73, 136);
+    --third-color: rgb(239, 239, 239);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
 }
 
 .login_form {
@@ -56,11 +59,11 @@ input {
     border-radius: 8px;
     cursor: pointer;
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--white);
 }
 
 .login_button:disabled {
-    background-color: #EFEFEF;
-    color: black;
+    background-color: var(--third-color);
+    color: var(--black);
     cursor: auto;
 }
