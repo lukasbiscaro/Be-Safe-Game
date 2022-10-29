@@ -7,30 +7,30 @@
 }
 
 body {
-    background: linear-gradient(var(--secondary-color), rgb(255, 255, 255));
+    background: linear-gradient(var(--secondary-color), var(--white));
 }
 
-.login_form {
+.login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     justify-content: center;
+    height: 100vh;
 }
 
-.login_container {
+.login-container {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-.login_container img {
+.login-container img {
     width: 100px;
 }
 
-.login_container h1 {
+.login-container h1 {
     color: var(--black);
     font-size: 1.5rem;
     margin-top: 20px;
@@ -40,35 +40,69 @@ input {
     text-align: center;
 }
 
-.login_input {
+.login-input {
+    height: 5%;
+    width: 300px;
+    outline: none;
+    color: var(--primary-color);
     border: 2px solid var(--black);
     border-radius: 8px;
-    color: var(--primary-color);
-    height: 5%;
-    outline: none;
-    max-width: 300px;
-    width: 100%;
 }
 
-.login_input::placeholder {
+.login-input::placeholder {
+    text-align: center;
     color: var(--primary-color);
     opacity: .2;
-    text-align: center;
+
 }
 
-.login_button {
-    max-width: 150px;
-    width: 100%;
+.login-button {
+    width: 150px;
     height: 5%;
     margin-top: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: var(--secondary-color);
     color: var(--white);
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    cursor: pointer;
 }
 
-.login_button:disabled {
+.login-button:disabled {
     background-color: var(--third-color);
     color: var(--black);
     cursor: auto;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 800px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 5px solid black;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+}
+
+.information h2 {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.key h2 {
+    font-size: 1rem;
+}
+
+.key img {
+    width: 20%;
 }
