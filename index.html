@@ -5,29 +5,29 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/assets/css/game.css" />
-  <script defer src="/assets/js/game.js"></script>
-  <title>Be Safe Game</title>
+  <link rel="stylesheet" href="./assets/css/login.css" />
+  <script defer src="./assets/js/login.js"></script>
+  <title>Be Safe Game | Login</title>
 </head>
 
 <body>
-  <nav class="nav-bar">
-    <h2>Player: <span class="player-username"></span></h2>
-    <h2>Meters Running: <span class="meters"></span>m</h2>
-  </nav>
-  <section class="game-board">
-    <div class="game-running">
-      <img src="/assets/images/sun.png" alt="sun-image" class="sun">
-      <img src="/assets/images/cloud.png" alt="cloud-image" class="cloud">
-      <img src="/assets/images/fox-metamask.png" alt="fox-image" class="metamask" />
-      <img src="/assets/images/hacker-img.png" alt="hacker-image" class="hacker" />
+  <form class="login-form">
+    <div class="login-container">
+      <img src="./assets/images/hacker-img.png" alt="hacker-image" />
+      <h1>Be Safe Game</h1>
     </div>
-    <div class="game-over display">
-      <h1 class="game-over-text"></h1>
-      <img src="/assets/images/die-fox.png" alt="die-fox-image" />
-      <button class="restart-button">Restart</button>
+    <div class="information">
+      <h2>Welcome! The objective of the game is not get caught by the Hacker!</h2>
+      <div class="key">
+        <h2>Use SPACEBAR to play: </h2>
+        <img src="./assets/images/spacebar.png" alt="backspace-image">
+      </div>
     </div>
-  </section>
+    <input type="text" name="text" class="login-input" placeholder="Enter your username" />
+    <button type="submit" class="login-button" disabled>
+      <h2>Play</h2>
+    </button>
+  </form>
 </body>
 
 </html>
