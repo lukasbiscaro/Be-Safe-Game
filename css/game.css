@@ -1,14 +1,15 @@
+@import url('reset.css');
+
 .nav-bar {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 45px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 136, 199);
+    background-color: var(--medium-blue-color);
 }
 
 .nav-bar h2 {
-    color: white;
+    color: var(--white);
     font-size: 1rem;
 }
 
@@ -19,8 +20,8 @@
     align-items: center;
     overflow: hidden;
     height: 95vh;
-    background: linear-gradient(rgb(0, 174, 255), rgb(255, 255, 255));
-    border-bottom: 20px solid rgb(17, 199, 0);
+    background: linear-gradient(var(--light-blue-color), var(--white));
+    border-bottom: 20px solid var(--green-color);
 }
 
 .game-over {
@@ -31,11 +32,13 @@
     align-items: center;
     text-align: center;
     width: 40%;
-    height: 45%;
-    background-color: rgb(165, 42, 42);
-    border: 6px solid black;
+    height: 50%;
+    color: var(--white);
+    line-height: 35px;
+    background-color: var(--red-color);
+    border: 6px solid var(--black);
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: var(--black, 0.24) 0px 3px 8px;
 }
 
 .game-over img {
@@ -43,7 +46,7 @@
 }
 
 .restart-button {
-    border: 3px solid black;
+    border: 3px solid var(--black);
     border-radius: 5px;
     height: 12%;
     width: 200px;
@@ -51,8 +54,8 @@
 }
 
 .restart-button:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     cursor: pointer;
 }
 

@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/reset.css" />
   <link rel="stylesheet" href="/css/game.css" />
   <script defer src="/js/game.js"></script>
   <title>Be Safe Game</title>
@@ -14,7 +13,7 @@
 <body>
   <nav class="nav-bar">
     <h2>Player: <span class="player-username"></span></h2>
-    <h2>Score: <span class="score"></span></h2>
+    <h2>Meters Running: <span class="meters"></span>m</h2>
   </nav>
   <section class="game-board">
     <div class="game-running">
@@ -23,11 +22,8 @@
       <img src="/images/fox-metamask.png" alt="fox-image" class="metamask" />
       <img src="/images/hacker-img.png" alt="hacker-image" class="hacker" />
     </div>
-    <div class="time-running">
-      <h1>U reach: <span></span></h1>
-    </div>
     <div class="game-over display">
-      <h1>You got caught, good luck next time!</h1>
+      <h1 class="game-over-text"></h1>
       <img src="/images/die-fox.png" alt="die-fox-image" />
       <button class="restart-button">Restart</button>
     </div>
