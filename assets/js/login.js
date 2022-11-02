@@ -13,7 +13,7 @@ function validateInput({ target }) {
 function clickSubmit(event) {
     event.preventDefault()
     localStorage.setItem('playerUserName', input.value)
-    window.location = './gamepage.html'
+    window.location = 'gamepage.html'
 }
 
 input.addEventListener('input', validateInput)

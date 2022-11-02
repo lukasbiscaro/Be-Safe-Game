@@ -1,4 +1,4 @@
-@import url('./assets/css/reset.css');
+@import url('assets/css/reset.css');
 
 body {
     background: linear-gradient(var(--dark-blue-color), var(--white));
